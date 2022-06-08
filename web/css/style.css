@@ -149,3 +149,20 @@ body {
     margin-left: 40px;
     margin-right: 40px;
 }
+
+.footer {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: #999;
+    border-style:dashed;
+}
+
+.footer .website-counter {
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer .website-counter .counter {
+    font-weight: 700;
+}
