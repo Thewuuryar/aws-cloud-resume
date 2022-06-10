@@ -1,4 +1,4 @@
-name: Deploy to Amazon S3 bucket
+name: Deploy Production to Amazon S3 bucket
 
 on:
   push:
