@@ -1,9 +1,9 @@
-name: Deploy to Amazon S3 bucket
+name: Deploy Dev to Amazon S3 bucket
 
 on:
   push:
     branches:
-      - main
+      - develop
 
   workflow_dispatch:
 
@@ -25,5 +25,5 @@ jobs:
         run: aws s3 sync ./web s3://aws-cloud-resume
 
       - name: Invalidate updated files
-        run: aws cloudfront create-invalidation --distribution-id E3VITY7XSSCHKG --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id E3VITY7XSSCHKG --paths "/dev/*"
 
