@@ -1,2 +1,2 @@
-# aws-cloud-resume-FE
-Front End code for AWS Cloud Resume Project
+# aws-cloud-resume
+Front End and Back End code for AWS Cloud Resume Project
