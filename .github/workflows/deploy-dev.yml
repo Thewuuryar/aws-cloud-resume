@@ -22,7 +22,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy files to bucket
-        run: aws s3 sync ./web s3://aws-cloud-resume/dev
+        run: aws s3 sync ./front-end/web s3://aws-cloud-resume/dev
 
       - name: Invalidate updated files
         run: aws cloudfront create-invalidation --distribution-id E3VITY7XSSCHKG --paths "/dev/*"
