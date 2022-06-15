@@ -4,7 +4,7 @@
 	<script defer src="script/index.js"></script>
 	<title>Resume | Paul Kaila</title>
 </head>
-<body>
+<body onload="updateVisitCounter()">
 	<div class='container'>
 		<div class="header">
 			<div class="full-name">V. Paul Kaila</div>
@@ -152,7 +152,7 @@
 		<div class="footer">
 			<div class="website-counter">
 				<span class="label">Website Counter: </span>
-				<span class="counter"></span>
+				<span id="visitors" class="counter"></span>
 			</div>
 		</div>
 	</div>

@@ -1,11 +1,36 @@
-var counterContainer = document.querySelector(".counter")
-var visitCount = localStorage.getItem("page_view")
-
-if(visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-} else {
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
+function getVisitCounter(){
+    fetch('https://4ovpv3y44m.execute-api.us-east-1.amazonaws.com/test/resume/visitors',{
+        method: 'GET'
+    })
+  .then(response => {
+    if (
+        response.ok
+    ) {
+      return response.json()
+    } else {
+      throw new Error('something went wrong');
+    }
+  })
+  .then(data => {
+    body = JSON.parse(data.body);
+    document.getElementById("visitors").innerText = body.Visit_Count;
+  })
 }
-counterContainer.innerHTML = visitCount;
+
+function updateVisitCounter(){
+    fetch('https://4ovpv3y44m.execute-api.us-east-1.amazonaws.com/test/resume/visitors',{
+        method: 'PUT'
+    })
+  .then(response => {
+    if (
+        response.ok
+    ) {
+      return response.json()
+    } else {
+      throw new Error('something went wrong');
+    }
+  })
+  .then(data => {})
+}
+
+getVisitCounter();
