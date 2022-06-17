@@ -1,21 +1,37 @@
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script defer src="script/index.js"></script>
+	<!-- <script src="script/index.js"></script> -->
 	<title>Resume | Paul Kaila</title>
 </head>
 <body onload="updateVisitCounter()">
 	<div class='container'>
 		<div class="header">
-			<div class="full-name">V. Paul Kaila</div>
+			<div class="full-name">Paul Kaila</div>
 			<div class="contact-info">
-				<span class="location-val">Orange, CA</span>
+				<a href="https://www.linkedin.com/in/paul-kaila/" target="_blank"><img class="badge" src="images/linkedin.png" alt="LinkedIn"></a>
+				<a href="https://github.com/Thewuuryar" target="_blank"><img class="badge" src="images/github.png" alt="github"></a>
 				<span class="separator"></span>
-				<span class="email">Email: </span>
-				<span class="email-val">jobs@paulkaila.com</span>
+				<span class="label">Email: </span>
+				<span class="label-val">jobs@paulkaila.com</span>
+				<span class="separator"></span>
+				<span class="label-val">Orange, CA</span>
+			</div>
+			<div class="navigation">
+				<span class="link"><a href="#summary">Summary of Qualifications</a></span>
+				<span class="separator"></span>
+				<span class="link"><a href="#experience">Professional Experience</a></span>
+				<span class="separator"></span>
+				<span class="link"><a href="#projects">Personal Projects</a></span>
+				<span class="separator"></span>
+				<span class="link"><a href="#education">Educational Background</a></span>
+				<span class="separator"></span>
+				<span class="link"><a href="#skills">Technical Skills</a></span>
 			</div>
 		</div>
-		<div class="about">
+		<div id="summary">
 			<div class="section">
 				<div class="section_title">Summary of Qualifications</div>
 				<div class="section_text">A combination of specialized education and applied experience has resulted in excellent qualifications as a <span class="emph">Server Engineer</span>, <span class="emph">IT Administrator</span>, <span class="emph">Network/System Administrator</span> and <span class="emph">Network/System Engineer</span>. Command superb communication skills, with the ability to explain complex technical information in clear terms. Precise and thorough, maintaining accuracy and quality in all work performance. Dedicated to continuous professional training to remain up-to-date on new technology developments.</div>
@@ -28,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="experience">
+		<div id="experience">
 			<div class="section">
 				<div class="section_title">Professional Experience</div>
 				<div class="section_item">
@@ -96,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="education">
+		<div id="education">
 			<div class="section">
 				<div class="section_title">Educational Background</div>
 				<div class="section_item">
@@ -110,50 +126,60 @@
 				</div>
 				<div class="section_list">
 					<div class="section_list_title">Training: </div>
-					<div class="section_list_item">ITIL v4</div>
-					<div class="section_list_item">Cybersecurity</div>
-					<div class="section_list_item">Windows Penetration Testing</div>
-					<div class="section_list_item">Diversity, Equity, and Inclusion</div>
+					<div class="columnar">
+						<div class="section_list_item">ITIL v4</div>
+						<div class="section_list_item">Cybersecurity</div>
+						<div class="section_list_item">Windows Penetration Testing</div>
+						<div class="section_list_item">Diversity, Equity, and Inclusion</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="skills">
+		<div id="skills">
 			<div class="section">
 				<div class="section_title">Technical Skills</div>
 				<div class="section_list">
 					<div class="section_list_title">Operating Systems</div>
-					<div class="section_list_item">Windows Server</div>
-					<div class="section_list_item">Red Hat Enterprise Linux</div>
-					<div class="section_list_item">Windows (Through 10)</div>
-					<div class="section_list_item">Apple/Mac</div>
-					<div class="section_list_item">VMWare</div>
-					<div class="section_list_item">SonicWall</div>
-					<div class="section_list_item">Ruckus</div>
-					<div class="section_list_item">Fortinet</div>
+					<div class="columnar">
+						<div class="section_list_item">Windows Server</div>
+						<div class="section_list_item">Red Hat Enterprise Linux</div>
+						<div class="section_list_item">Windows (Through 10)</div>
+						<div class="section_list_item">Apple/Mac</div>
+						<div class="section_list_item">VMWare</div>
+						<div class="section_list_item">SonicWall</div>
+						<div class="section_list_item">Ruckus</div>
+						<div class="section_list_item">Fortinet</div>
+					</div>
 				</div>
 				<div class="section_list">
 					<div class="section_list_title">Software</div>
-					<div class="section_list_item">Active Directory</div>
-					<div class="section_list_item">Microsoft 365 Administration</div>
-					<div class="section_list_item">Databases</div>
-					<div class="section_list_item">Powershell</div>
+					<div class="columnar">
+						<div class="section_list_item">Active Directory</div>
+						<div class="section_list_item">Microsoft 365 Administration</div>
+						<div class="section_list_item">Databases</div>
+						<div class="section_list_item">Powershell</div>
+					</div>
 				</div>
 				<div class="section_list">
 					<div class="section_list_title">Hardware</div>
-					<div class="section_list_item">Servers</div>
-					<div class="section_list_item">Desktops</div>
-					<div class="section_list_item">Laptops</div>
-					<div class="section_list_item">Routers</div>
-					<div class="section_list_item">Firwalls</div>
-					<div class="section_list_item">SAN Storage</div>
+					<div class="columnar">
+						<div class="section_list_item">Servers</div>
+						<div class="section_list_item">Desktops</div>
+						<div class="section_list_item">Laptops</div>
+						<div class="section_list_item">Routers</div>
+						<div class="section_list_item">Firewalls</div>
+						<div class="section_list_item">SAN Storage</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="footer">
-			<div class="website-counter">
-				<span class="label">Website Counter: </span>
-				<span id="visitors" class="counter"></span>
-			</div>
+			<span class="label">© 2022</span>
+			<span class="separator"></span>
+			<span class="label">Paul Kaila</span>
+			<span class="separator"></span>
+			<span class="label">Visits: </span>
+			<span id="hits" class="label-val">0</span>
 		</div>
 	</div>
 </body>

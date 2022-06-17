@@ -13,7 +13,7 @@ function getVisitCounter(){
   })
   .then(data => {
     body = JSON.parse(data.body);
-    document.getElementById("visitors").innerText = body.Visit_Count;
+    document.getElementById("hits").innerText = body.Visit_Count;
   })
 }
 
@@ -30,7 +30,7 @@ function updateVisitCounter(){
       throw new Error('something went wrong');
     }
   })
-  .then(data => {})
+  .then(data => { getVisitCounter() })
 }
 
-getVisitCounter();
+

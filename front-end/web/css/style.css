@@ -11,18 +11,29 @@ body {
     color:#222;
     font-size: 14px;
     line-height: 26px;
-    padding-bottom: 50px;
+    padding: 50px 10px 50px;
 }
 
 .container {
     min-width: 700px;
-    max-width: 80%;
+    max-width: 900px;
     background-color: #fff;
     margin: 0px auto 0px;
     box-shadow: 1px 1px 2px #dad7d7;
     border-radius: 3px;
     padding: 40px;
-    margin-top: 50px;
+}
+
+.separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+}
+
+.label {
+    color: #999;
+    font-weight: 300;
 }
 
 .header {
@@ -32,24 +43,21 @@ body {
 .header .full-name {
     font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 700;
 }
 
-.header .contact-info {
-    margin-bottom: 20px;
+.header .navigation {
+    margin-bottom: 10px;
 }
 
-.header .email {
-    color: #999;
-    font-weight: 300;
-}
-
-.header .separator {
-    height: 10px;
-    display: inline-block;
-    border-left: 2px solid #999;
-    margin: 0px 10px;
+.header .badge {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    padding: 2px;
+    background-color: #999;
+    border-radius: 20px;
 }
 
 .emph {
@@ -57,7 +65,12 @@ body {
     text-transform: uppercase;
 }
 
-.about,  .experience{
+.navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#summary,  #experience, #education, #skills{
     margin-bottom: 30px;
 }
 
@@ -71,6 +84,7 @@ body {
     text-align: center;
     background-color: #dad7d7;
     font-variant: small-caps;
+    border-radius: 5px;
     margin-bottom: 10px;
     padding: 5px;
 }
@@ -152,18 +166,11 @@ body {
 }
 
 .footer {
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 10px;
-    border: #999;
-    border-style:dashed;
-}
-
-.footer .website-counter {
-    font-size: 10px;
+    border-top: 1px solid #999;
     text-align: center;
 }
 
-.footer .website-counter .counter {
-    font-weight: 700;
+.columnar {
+    column-width: 250px;
+    column-gap: 30px;
 }
