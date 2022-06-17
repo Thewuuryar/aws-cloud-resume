@@ -47,11 +47,7 @@ body {
     font-weight: 700;
 }
 
-.header .navigation {
-    margin-bottom: 10px;
-}
-
-.header .badge {
+.badge {
     width: 20px;
     height: 20px;
     vertical-align: middle;
@@ -68,6 +64,29 @@ body {
 .navigation {
     margin-top: 20px;
     text-align: center;
+    pointer-events: none;
+}
+
+.navigation > *.nav-link {
+    pointer-events: auto;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: ease-out .4s;
+    -moz-transition: ease-out .4s;
+    transition: ease-out .4s;
+}
+
+.navigation:hover > *,
+.navigation:focus-within > * {
+    color: #999;
+}
+
+.navigation:hover > *:hover,
+.navigation:focus-within > *:focus {
+    color: blue;
 }
 
 #summary,  #experience, #education, #skills{
@@ -168,6 +187,8 @@ body {
 .footer {
     border-top: 1px solid #999;
     text-align: center;
+    color: #999;
+    font-weight: 300;
 }
 
 .columnar {
