@@ -1,39 +1,57 @@
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="theme-light">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script defer src="script/index.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+	<script src="script/index.js"></script>
 	<title>Resume | Paul Kaila</title>
 </head>
 <body onload="updateVisitCounter()">
 	<div class='container'>
 		<div class="header">
-			<div class="full-name">V. Paul Kaila</div>
+			<div class="full-name">Paul Kaila</div>
 			<div class="contact-info">
-				<span class="location-val">Orange, CA</span>
+				<a href="https://www.linkedin.com/in/paul-kaila/" target="_blank"><img class="badge" src="images/linkedin.png" alt="LinkedIn"></a>
+				<a href="https://github.com/thewuuryar" target="_blank"><img class="badge" src="images/github.png" alt="github"></a>
 				<span class="separator"></span>
-				<span class="email">Email: </span>
-				<span class="email-val">jobs@paulkaila.com</span>
+				<span class="label">Email: </span>
+				<span class="label-val">jobs@paulkaila.com</span>
+				<span class="separator"></span>
+				<span class="label-val">Orange, CA</span>
+			</div>
+			<div class="navigation">
+				<a class="nav-link" href="#summary">Summary of Qualifications</a>
+				<span class="separator"></span>
+				<a class="nav-link" href="#experience">Professional Experience</a>
+				<span class="separator"></span>
+				<a class="nav-link" href="#projects">Personal Projects</a>
+				<span class="separator"></span>
+				<a class="nav-link" href="#education">Educational Background</a>
+				<span class="separator"></span>
+				<a class="nav-link" href="#skills">Technical Skills</a>
 			</div>
 		</div>
-		<div class="about">
+		<div id="summary">
 			<div class="section">
 				<div class="section_title">Summary of Qualifications</div>
-				<div class="section_text">A combination of specialized education and applied experience has resulted in excellent qualifications as a <span class="emph">Server Engineer</span>, <span class="emph">IT Administrator</span>, <span class="emph">Network/System Administrator</span> and <span class="emph">Network/System Engineer</span>. Command superb communication skills, with the ability to explain complex technical information in clear terms. Precise and thorough, maintaining accuracy and quality in all work performance. Dedicated to continuous professional training to remain up-to-date on new technology developments.</div>
+				<div class="section_text">A combination of specialized education and applied experience has resulted in excellent qualifications as a <span class="emph">Server Engineer</span> and <span class="emph">DevOps Engineer</span>. Command superb communication skills, with the ability to explain complex technical information in clear terms. Precise and thorough, maintaining accuracy and quality in all work performance. Dedicated to continuous professional training to remain up to date on new technology developments.</div>
 				<div class="section_list">
 					<div class="section_list_title">Key Strengths Include: </div>
-					<div class="section_list_item">Adept at training users in Cyber Security, and Disaster Recovery and Backup Systems.</div>
-					<div class="section_list_item">Significant background installing and upgrading systems - including hardware, software, servers, networks and peripheral equipment - and troubleshooting/resolving technical problems.</div>
+					<div class="section_list_item">Significant background installing, upgrading, and managing systems - including hardware, software, servers, networks, and peripheral equipment - and troubleshooting/resolving technical problems.</div>
+					<div class="section_list_item">Excellent customer service skills and adept at documenting and training users/customers on technical procedures.</div>
 					<div class="section_list_item">Effectively manage vendor relations and purchasing responsibilities.</div>
-					<div class="section_list_item">Experienced setting up a Home Lab with a firewall, access points, switches, VMware, Network Attached Storage (NAS) and container-based applications.</div>
+					<div class="section_list_item">Driven to learn and stay up to date on the ever-changing landscape of technology.</div>
 				</div>
 			</div>
 		</div>
-		<div class="experience">
+		<div id="experience">
 			<div class="section">
 				<div class="section_title">Professional Experience</div>
 				<div class="section_item">
 					<div class="left">
-						<div class="position">Server Engineer</div>
+						<div class="title">Server Engineer</div>
 						<div class="duration">2021 to Present</div>
 					</div>
 					<div class="right">
@@ -41,15 +59,18 @@
 						<div class="address">Downey, CA</div>
 					</div>
 					<div class="description">
-						<div class="text">Design, develop, and implement Windows and Linux servers, cloud-based applications, and databases in a large-scale environment of 50+ servers, 100+ locations, and 1000+ users. Manage PRTG, Cylance, and Tenable to monitor, analyze, patch, secure, and perform performance tuning on servers, applications, and databases. Manage replication, backup, long-term archive, and restoration strategies for onsite Production and remote Non-Production environment.</div>
+						<div class="text">Design, develop, and implement Windows and Red Hat Linux servers, cloud-based applications, Oracle and SQL databases, and Azure Cloud VMs in a large-scale environment of 50+ servers, 100+ locations, and 1000+ users. Use PRTG, Cylance, and Tenable to monitor and secure servers, applications, and databases. Stage and apply periodic hardware and software patches in multi-stage environments. Manage replication, backup, long-term archive, and restoration strategies for onsite Production and remote Non-Production environment.</div>
 						<div class="section_list">
-							<div class="section_list_item">Collaborate with the Security Officer on Cybersecurity, network security, and disaster recovery plans.</div>
+							<div class="section_list_item"><span class="emph">Automation - </span>Use Microsoft PowerAutomate, Ansible, and shell scripts to automate the multi-stage patching procedures, including sending periodic patch reminder emails to involved staff and using a RESTApi to schedule patches in IBM BigFix.</div>
+							<div class="section_list_item"><span class="emph">Project Management - </span>Plan, manage, and deliver projects in a timely manner. Project lead for implementing procedures for off-site backup of Production Environment.</div>
+							<div class="section_list_item"><span class="emph">Documentation - </span>Create documentation for technical procedures, including setup of new services and commonly repeated tasks.</div>
+							<div class="section_list_item"><span class="emph">Technical Environment - </span>Manage a majority Red Hat Enterprise Linux environment with some Windows Servers.</div>
 						</div>
 					</div>
 				</div>
 				<div class="section_item">
 					<div class="left">
-						<div class="position">Network Administrator</div>
+						<div class="title">Network Administrator</div>
 						<div class="duration">2015 to 2021</div>
 					</div>
 					<div class="right">
@@ -57,20 +78,20 @@
 						<div class="address">Pasadena, CA</div>
 					</div>
 					<div class="description">
-						<div class="text">Administered a computer network for 500+ students in grades 4-12 and 200 faculty and staff at this private school. Managed servers, VMware cluster, a ShoreTel IP phone system, networking equipment, and backup systems. Managed Office 365 Administration, including Exchange Online and Azure AD. Developed and implemented policies for using and updating school-owned hardware and software. Created privileged and non-privileged accounts for all IT staff. Managed Kaspersky for virus and malware protection. Promoted from <span class="emph">Desktop Support Specialist</span>.</div>
+						<div class="text">Manage Windows and Linux Servers, VMWare Hosts, HP SAN Array, Shoretel IP system, Ruckus APs, Aruba Switches, Sonicwall Firewall, Microsoft 365 Administration, including Exchange Online and Azure AD in a medium scale environment of 20+ servers, 15+ locations, and 800+ users. Developed and implemented policies for using and updating school-owned hardware and software. Managed Kaspersky for virus and malware protection. Promoted from <span class="emph">Desktop Support Specialist</span>.</div>
 						<div class="section_list">
-							<div class="section_list_item"><span class="emph">Security - </span>Designed and implemented a program to educate students and staff on security issues. Conducted phishing simulations. Implemented policies on servers/systems to mitigate risk, including Multi Factor Authentication and Azure AD security best practices. Ensured compliance with applicable regulations.</div>
-							<div class="section_list_item"><span class="emph">Onboarding - </span>Set up all new accounts and orientations for new staff and students. Led training workshops.</div>
-							<div class="section_list_item"><span class="emph">Remote Learning - </span>Transitioned the school's education system to MS Teams and Zoom in response to the COVID-19 pandemic. Integrated with Rediker SIS (Student Integration Systems).</div>
-							<div class="section_list_item"><span class="emph">Purchasing - </span>Researched options for purchasing hardware and software licensing.</div>
-							<div class="section_list_item"><span class="emph">Process Improvements - </span>Implemented new processes that reduced the school's printing budget by over 25%. Setup automated computer imaging and inventory server thereby significantly reducing setup time and increasing efficiency.</div>
-							<div class="section_list_item"><span class="emph">Hardware - </span>Set up multiple VMware/ESXi host clusters. Managed SonicWall firewalls, Ruckus access points and Aruba switches.</div>
+							<div class="section_list_item"><span class="emph">Cybersecurity - </span>Designed and implemented a program to educate students and staff on security issues. Conducted phishing simulations. Implemented policies on servers/systems to mitigate risk, including Multi Factor Authentication and Azure AD security best practices. Ensured compliance with applicable regulations. Introduced privileged access management to restrict elevated permissions for all IT staff in a previously unmanaged environment.</div>
+							<div class="section_list_item"><span class="emph">Instructing - </span>Led orientation and training workshops for new staff and students. Documented technical procedures to be followed by staff and students. Taught 3D printing workshops for 3rd graders over the summer.</div>
+							<div class="section_list_item"><span class="emph">Remote Learning - </span>Transitioned the school's education system from in-person learning to Microsoft Teams and Zoom in response to the COVID-19 pandemic. Integrated with Rediker SIS (Student Integration Systems).</div>
+							<div class="section_list_item"><span class="emph">Vendor Management - </span>Managed vendors, re-negotiated contracts, researched options for new hardware and software licensing, and presented options to Management for budget approval.</div>
+							<div class="section_list_item"><span class="emph">Process Improvements - </span>Implemented new processes that reduced the school's printing budget by over 25%. Setup automated computer imaging and inventory management system thereby significantly reducing setup time and increasing efficiency.</div>
+							<div class="section_list_item"><span class="emph">Technical Environment - </span>Set up multiple VMware ESXi host clusters. Managed SonicWall firewalls, Ruckus access points and Aruba switches. Managed a majority Windows Server environment with some Ubuntu servers.</div>
 						</div>
 					</div>
 				</div>
 				<div class="section_item">
 					<div class="left">
-						<div class="position">Tech Specialist</div>
+						<div class="title">Tech Specialist</div>
 						<div class="duration">2013 to 2015</div>
 					</div>
 					<div class="right">
@@ -78,7 +99,7 @@
 						<div class="address">West Covina, CA</div>
 					</div>
 					<div class="description">
-						<div class="text">Served as a product expert for the technology department of the store. Diagnosed computer issues, removed viruses and malware, and installed hard drives and RAM for customers needing technology support on personal devices. Generated sales of computers, printers, and software to both individuals and businesses. Assisted with all other areas of store operations, including cashiering, inventorying, and stocking. </div>
+						<div class="text">Served as a product expert for the technology department of the store. Diagnosed computer issues, removed viruses and malware, and installed hard drives and RAM for customers needing technology support on personal devices. Generated sales of computers, printers, and software to both individuals and businesses. Assisted with all other areas of store operations including cashiering, inventorying, and stocking. </div>
 						<div class="section_list">
 							<div class="section_list_item"><span class="emph">Sales - </span>Won "2015 Top Year to Date Sales" Award.</div>
 						</div>
@@ -86,7 +107,7 @@
 				</div>
 				<div class="section_item">
 					<div class="left">
-						<div class="position">Volunteer</div>
+						<div class="title">Volunteer</div>
 						<div class="duration">2012 to 2013</div>
 					</div>
 					<div class="right">
@@ -96,7 +117,51 @@
 				</div>
 			</div>
 		</div>
-		<div class="education">
+		<div id="projects">
+			<div class="section">
+				<div class="section_title">Personal Projects</div>
+				<div class="section_item">
+					<div class="left">
+						<div class="title">AWS Serverless CI/CD Website</div>
+					</div>
+					<div class="right">
+						<div class="location"><a href="https://resume.paulkaila.com">https://resume.paulkaila.com</a></div>
+					</div>
+					<div class="description">
+						<div class="text">The website displays my resume and runs on a serverless S3 hosted static website with integrated CI/CD pipeline for both the front-end and back-end code. Front-end written in HTML, CSS, and Javascript leveraging Python Boto3 and Lambda to automate and serve changes to/from DynamoDB using an API Gateway. Automated back-end infrastructure deployment using AWS SAM and Github Actions. </div>
+						<div class="section_list">
+							<div class="section_list_title">Technologies Used: </div>
+							<div class="columnar">
+								<div class="section_list_item">AWS IAM, CloudFront, S3, DynamoDB, APIGateway, Lambda, SAM</div>
+								<div class="section_list_item">Git</div>
+								<div class="section_list_item">GitHub Actions</div>
+							</div>
+					</div>
+				</div>
+				<div class="section_item">
+					<div class="left">
+						<div class="title">Homelab</div>
+					</div>
+					<div class="description">
+						<div class="text">Built a home network consisting of a firewall, meshed Ruckus access points, Mikrotik switches, VMWare ESXi and KVM Hypervisors, a containerized  environment in Docker, and Network Attached Storage (NAS) periodically backed up to the cloud.</div>
+						<div class="section_list">
+							<div class="section_list_title">Technologies Used: </div>
+							<div class="columnar">
+								<div class="section_list_item">pfSense</div>
+								<div class="section_list_item">Mikrotik</div>
+								<div class="section_list_item">Ruckus</div>
+								<div class="section_list_item">VMWare ESXi and vCenter</div>
+								<div class="section_list_item">KVM</div>
+								<div class="section_list_item">FreeNAS</div>
+								<div class="section_list_item">Docker</div>
+								<div class="section_list_item">Fedora / Rocky Linux / Red Hat Enterprise Linux</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="education">
 			<div class="section">
 				<div class="section_title">Educational Background</div>
 				<div class="section_item">
@@ -108,52 +173,56 @@
 						<div class="location">California Polytechnic State University, Pomona</div>
 					</div>
 				</div>
-				<div class="section_list">
-					<div class="section_list_title">Training: </div>
-					<div class="section_list_item">ITIL v4</div>
-					<div class="section_list_item">Cybersecurity</div>
-					<div class="section_list_item">Windows Penetration Testing</div>
-					<div class="section_list_item">Diversity, Equity, and Inclusion</div>
+				<div class="section_item">
+					<div class="section_list">
+						<div class="section_list_title">Training: </div>
+						<div class="columnar">
+							<div class="section_list_item">ITIL v4 Foundation</div>
+							<div class="section_list_item">Red Hat Certified System Administrator</div>
+							<div class="section_list_item">Microsoft 365 Administration</div>
+							<div class="section_list_item">Darktrace</div>
+							<div class="section_list_item">Cybersecurity Education</div>
+							<div class="section_list_item">Windows Penetration Testing</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="skills">
+		<div id="skills">
 			<div class="section">
 				<div class="section_title">Technical Skills</div>
-				<div class="section_list">
-					<div class="section_list_title">Operating Systems</div>
-					<div class="section_list_item">Windows Server</div>
-					<div class="section_list_item">Red Hat Enterprise Linux</div>
-					<div class="section_list_item">Windows (Through 10)</div>
-					<div class="section_list_item">Apple/Mac</div>
-					<div class="section_list_item">VMWare</div>
-					<div class="section_list_item">SonicWall</div>
-					<div class="section_list_item">Ruckus</div>
-					<div class="section_list_item">Fortinet</div>
-				</div>
-				<div class="section_list">
-					<div class="section_list_title">Software</div>
-					<div class="section_list_item">Active Directory</div>
-					<div class="section_list_item">Microsoft 365 Administration</div>
-					<div class="section_list_item">Databases</div>
-					<div class="section_list_item">Powershell</div>
-				</div>
-				<div class="section_list">
-					<div class="section_list_title">Hardware</div>
-					<div class="section_list_item">Servers</div>
-					<div class="section_list_item">Desktops</div>
-					<div class="section_list_item">Laptops</div>
-					<div class="section_list_item">Routers</div>
-					<div class="section_list_item">Firwalls</div>
-					<div class="section_list_item">SAN Storage</div>
+				<div class="section_item">
+					<div class="section_list">
+						<div class="columnar">
+							<div class="section_list_item">HP Servers</div>
+							<div class="section_list_item">Tape Libraries</div>
+							<div class="section_list_item">FibreChannel / iSCSI SAN Storage</div>
+							<div class="section_list_item">VMWare ESXi</div>
+							<div class="section_list_item">AWS</div>
+							<div class="section_list_item">Windows Server (2008-2019)</div>
+							<div class="section_list_item">Red Hat Enterprise Linux 7, 8</div>
+							<div class="section_list_item">Active Directory</div>
+							<div class="section_list_item">SQL Databases</div>
+							<div class="section_list_item">Microsoft 365 Administration</div>
+							<div class="section_list_item">Zoom</div>
+							<div class="section_list_item">Git</div>
+							<div class="section_list_item">Powershell</div>
+							<div class="section_list_item">Linux / Bash</div>
+							<div class="section_list_item">Python</div>
+							<div class="section_list_item">Ansible / yaml</div>
+							<div class="section_list_item">CI/CD Pipelines</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="footer">
-			<div class="website-counter">
-				<span class="label">Website Counter: </span>
-				<span id="visitors" class="counter"></span>
-			</div>
+			<span class="label">© 2022</span>
+			<span class="separator"></span>
+			<span class="label">Paul Kaila</span>
+			<span class="separator"></span>
+			<span class="label">Visits: </span>
+			<span id="hits" class="label-val">0</span>
 		</div>
 	</div>
 </body>

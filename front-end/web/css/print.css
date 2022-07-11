@@ -1,22 +1,13 @@
-.theme-light {
-    --bg-bg-color: #eee;
-    --bg-page-color: #fff;
-    --bg-shadow-color: #dad7d7;
-    --section-header-color: #dad7d7;
-    --default-text-color: #222;
-    --light-text-color: #444;
-    --faded-text-color: #999;
-    --separator-color: #999;
-    --badge-color: #999;
-    --highlight-color: blue;
-}
-
 html {
     height: 100%;
 }
 
 body {
-    overflow-anchor: none;
+    margin: 0.5in 0.7in 0.7in 0.5in; 
+    padding: 0; 
+    font: 12px Arial, "Lato", sans-serif; 
+    color: #000;
+    /* overflow-anchor: none;
     min-height: 100%;
     background: var(--bg-bg-color);
     font-family: 'Lato', sans-serif;
@@ -24,33 +15,37 @@ body {
     color:var(--default-text-color);
     font-size: 14px;
     line-height: 26px;
-    padding: 50px 10px 50px;
+    padding: 50px 10px 50px; */
 }
 
 .container {
-    min-width: 700px;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    /* min-width: 700px;
     max-width: 900px;
     background-color: var(--bg-page-color);
     margin: 0px auto 0px;
     box-shadow: 1px 1px 2px var(--bg-shadow-color);
     border-radius: 3px;
-    padding: 40px;
-}
+    padding: 40px; */
+} 
 
-.separator {
+/* .separator {
     height: 10px;
     display: inline-block;
     border-left: 2px solid var(--separator-color);
     margin: 0px 10px;
-}
+} */
 
-.label {
+/* .label {
     color: var(--faded-text-color);
     font-weight: 300;
-}
+} */
 
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    /* margin-bottom: 20px; */
 }
 
 .header .full-name {
@@ -61,7 +56,8 @@ body {
 }
 
 .badge {
-    width: 20px;
+    display: none;
+    /* width: 20px;
     height: 20px;
     vertical-align: middle;
     padding: 2px;
@@ -69,25 +65,26 @@ body {
     border-radius: 20px;
     -webkit-transition: ease-out .4s;
     -moz-transition: ease-out .4s;
-    transition: ease-out .4s;
+    transition: ease-out .4s; */
 }
 
-.badge:hover{
+/* .badge:hover{
     background-color: var(--highlight-color);
 }
 
 .emph {
     font-weight: bold;
     text-transform: uppercase;
-}
+} */
 
 .navigation {
-    margin-top: 20px;
+    display: none;
+    /* margin-top: 20px;
     text-align: center;
-    pointer-events: none;
+    pointer-events: none; */
 }
 
-.navigation > *.nav-link {
+/* .navigation > *.nav-link {
     pointer-events: auto;
 }
 
@@ -216,4 +213,4 @@ body {
 .columnar {
     column-width: 250px;
     column-gap: 30px;
-}
+}*/
